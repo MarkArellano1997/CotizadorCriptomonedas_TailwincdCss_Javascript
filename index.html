@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizado de Criptomonedas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="h-screen bg-gradient-to-r from-cyan-900 to-sky-500">
+
+    <div class="contianer sm:flex">
+
+        <div class="sm:w-1/2 sm:h-screen flex items-center p-4">
+            <img src="/image-3046639_1280.png" alt="">
+        </div>
+
+        <div class="sm:w-1/2 my-auto p-8">
+
+            <form id="formulario">
+
+                <div class="grid mb-7">
+                    <label class="text-2xl text-white" for="moneda">Elige tu moneda</label>
+                    <select class="mt-4 py-2 rounded" name="moneda" id="moneda">
+                        <option value="">-- Seleccione una moneda --</option>
+                        <option value="USD">Dolar Estadounidense</option>
+                        <option value="MXN">Peso Mexicano</option>
+                        <option value="GBP">Libras</option>
+                        <option value="EUR">Euros</option>
+                    </select>
+                </div>
+
+                <div class="grid mb-7">
+                    <label class="text-2xl text-white" for="criptomoneda">Elige una Criptomoneda</label>
+                    <select class="mt-4 py-2 rounded" name="criptomoneda" id="criptomoneda">
+                        <option value="">-- Seleccione una criptomoneda --</option>
+                    </select>
+                </div>
+
+                <button class="w-full bg-blue-400 py-2 rounded text-white font-bold mb-6" type="submit">Cotizar Criptomoneda</button>
+
+                <div id="resultado" class="text-white font-bold"></div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
